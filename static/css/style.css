@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(233, 235, 241);
+}
+
+.header{
+    background-color: rgb(141, 24, 199);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.podcast-section{
+    background-color: rgb(233, 235, 241);
+    width: 98vw;
+    margin-top: 1.5rem;
+    border-radius: .6rem;
+    box-shadow: 0 0 1rem 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.podcast-container-grid{
+    display: grid;
+    margin-top: 1.8rem;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 3rem;
+    /* column-gap: 3rem; */
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.grid-item{
+    width: 28rem;
+    background-color: white;
+    height: 28rem;
+    box-shadow: 0 0 1rem 1px rgba(0, 0, 0, 0.4);
+    border-radius: .8rem;
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 16rem;
+    position: relative;
+    /* margin-top: 0.5rem; */
+    /* background-color: yellow; */
+}
+
+.image-section .podcast-cover-image{
+    height: 100%;
+    width: 100%;
+}
+
+.information-layer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 40rem;
+}
+
+
+
+
+#play-btn{
+    position: absolute;
+    height: 3.5rem;
+    bottom: .3rem;
+    right: .5rem;
+    cursor: pointer;
+    transition: .3s;
+    opacity: .9;
+}
+
+#play-btn:hover{
+    transform: translateY(-4%);
+    filter: saturate(10);
+    opacity: 1;
+}
+
+.info-section{
+    width: 98%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info-section p{
+    margin-top: .5rem;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+@media (max-width:1601px){
+    .grid-item{
+        width: 26rem;
+        height: 31rem;
+    }
+
+    .podcast-container-grid{
+        width: 98%;
+    }
+}
+
+
+@media (max-width:1429px){
+
+    .grid-item{
+        width: 25rem;
+        height: 31rem;
+    }
+}
+
+
+@media (max-width:1351px){
+    .podcast-container-grid{
+        width: 100%;
+    }
+}
+
+
+@media (max-width:1281px){
+    .grid-item {
+        width: 22rem;
+        height: 29rem;
+    }
+
+}
+
+@media (max-width:1129px){
+    .grid-item {
+        width: 20rem;
+    }
+
+    #play-btn{
+        height: 3.2rem;
+    }
+}
+
+@media (max-width:1031px){
+    .grid-item {
+        width: 18rem;
+    }
+}
+
+@media (max-width:927px){
+    .grid-item {
+        width: 16rem;
+    }
+}
+
+@media (max-width:827px){
+    .podcast-container-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .grid-item{
+        width: 23rem;
+    }
+
+}
+
+@media (max-width:779px){
+
+    .grid-item{
+        width: 22rem;
+    }
+    
+}
+
+
+@media (max-width:745px){
+    .grid-item{
+        width: 18rem;
+    }
+
+    .podcast-container-grid{
+        row-gap: 4rem;
+    }
+    
+}
+
+@media (max-width:627px){
+    .grid-item{
+        width: 25rem;
+    }
+
+    .podcast-section{
+        width: 96vw;
+    }
+
+    .podcast-container-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+
+@media (max-width:473px){
+
+    .grid-item{
+        width: 20rem;
+        height: 30rem;
+    }
+    
+}
+
+@media (max-width:415px){
+
+    .header h1{
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    
+}
+
+
+@media (max-width:365px){
+
+    .header h1{
+        font-size: 1.2rem;
+    }
+
+    .grid-item{
+        width: 17rem;
+        height: 32rem;
+    }
+    
+}
+
