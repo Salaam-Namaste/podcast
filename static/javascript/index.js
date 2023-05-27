@@ -1,22 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
-    let isPause=true;
-    const buttons = document.getElementsByClassName('play-btn');
 
+      let audio1 = document.getElementById("audio1");
+      let info=document.getElementById("info1");
+      let infotext=document.getElementById('info-text')
 
-    for (let i = 0; i <=buttons.length; i++) {
-        buttons[i].addEventListener('click', function() {
+      audio1.addEventListener('play',function(){
+        info.classList.add('show-info')
+        infotext.style.opacity=0
+        infotext.innerText='Now Playing..'
+        infotext.style.animation='yaxis-animation .5s .8s backwards'
+        infotext.style.opacity=1
+      })
 
-            if(isPause==true){
-                buttons[i].src='assets/png/play-button.png'
-                isPause=false
-            }
-            else{
-                buttons[i].src='assets/png/pause.png'
-                isPause=true
-            }
-
-        });
-    }
+      audio1.addEventListener('pause',function(){
+        info.classList.remove('show-info')
+        infotext.style.animation=''
+      })
 
 
   });

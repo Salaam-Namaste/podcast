@@ -18,6 +18,25 @@ body{
     padding: 4rem;
 }
 
+.header h1{
+    animation: yaxis-animation .5s .2s backwards
+}
+
+/* aniamation */
+@keyframes yaxis-animation {
+    0%{
+        opacity: 0;
+        transform: translateY(15%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+
 /* MAIN SECTION */
 .main{
     display: flex;
@@ -49,16 +68,27 @@ body{
     height: 100%;
     align-items: center;
     justify-items: center;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 .grid-item{
     width: 28rem;
     background-color: white;
-    height: 28rem;
+    /* height: 30rem; */
     box-shadow: 0 0 1rem 1px rgba(0, 0, 0, 0.4);
     border-radius: .8rem;
     overflow: hidden;
 }
+
+.grid-item:nth-child(1){
+    animation: yaxis-animation .5s .3s backwards
+}
+
+.grid-item:nth-child(2){
+    animation: yaxis-animation .5s .4s backwards
+}
+
+
 
 .container{
     width: 100%;
@@ -90,9 +120,14 @@ body{
     position: absolute;
     z-index: 300;
     width: 100%;
-    bottom: .2rem;
-    border-radius: 4rem;
+    bottom: 0rem;
     height: 2rem; 
+    background-color: white;
+    transition: .4s;
+}
+
+.audio:hover{
+    transform: translateY(-3%);
 }
 
 .information-layer{
@@ -103,8 +138,18 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    top: 40rem;
+    bottom: 18rem;
     box-shadow: 0 0 1rem 1px purple;
+    transition: .7s ease;
+    color: rgba(255, 255, 255, 0.666);
+}
+
+/* #info-text{
+    opacity: 0;
+} */
+
+.show-info{
+    bottom: 0rem;
 }
 
 #play-btn{
@@ -131,6 +176,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding:1.5rem 0;
 }
 .info-section p{
     margin-top: .5rem;
