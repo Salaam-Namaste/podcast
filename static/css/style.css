@@ -1,3 +1,4 @@
+/* BASE STYLES */
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +18,7 @@ body{
     padding: 4rem;
 }
 
+/* MAIN SECTION */
 .main{
     display: flex;
     justify-content: center;
@@ -24,6 +26,7 @@ body{
     flex-direction: column;
 }
 
+/* PODCAST SECTION */
 .podcast-section{
     background-color: rgb(233, 235, 241);
     width: 98vw;
@@ -83,6 +86,15 @@ body{
     width: 100%;
 }
 
+.audio{
+    position: absolute;
+    z-index: 300;
+    width: 100%;
+    bottom: .2rem;
+    border-radius: 4rem;
+    height: 2rem; 
+}
+
 .information-layer{
     display: flex;
     justify-content: center;
@@ -92,10 +104,8 @@ body{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     top: 40rem;
+    box-shadow: 0 0 1rem 1px purple;
 }
-
-
-
 
 #play-btn{
     position: absolute;
