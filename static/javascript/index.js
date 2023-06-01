@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
       let infotext=document.getElementById('info-text')
       let grid=document.getElementById('grid-container')
       let podSection=document.getElementById('podcast-section')
+      let mainSection=document.getElementById("main")
 
       audio1.addEventListener('play',function(){
         info.classList.add('show-info')
@@ -13,8 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
         infotext.style.animation='yaxis-animation .5s .8s backwards'
         infotext.style.opacity=1
 
+
         setTimeout(() => {
-          podSection.style.backgroundColor='rgba(0, 0, 0, 0.8)'
+          podSection.style.backgroundColor='rgba(0, 0, 0, 0.1)'
         }, 200);
 
         // setTimeout(() => {
