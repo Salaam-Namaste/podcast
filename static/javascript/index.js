@@ -25,14 +25,10 @@ document.addEventListener('DOMContentLoaded', function() {
       })
 
       audio1.addEventListener('pause',function(){
-
         infotext.style.animation=''
-        
         podSection.style.backgroundColor='rgb(233, 235, 241)'
-
-        setTimeout(() => {
-          info.classList.remove('show-info')
-        }, 200);
+        
+        info.classList.remove('show-info')
 
       })
 
