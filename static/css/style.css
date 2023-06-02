@@ -124,6 +124,12 @@ body{
 .grid-item:nth-child(2){
     animation: yaxis-animation .5s .4s backwards
 }
+.grid-item:nth-child(3){
+    animation: yaxis-animation .5s .5s backwards
+}
+.grid-item:nth-child(3) img{
+    transform: translateY(30%);
+}
 
 
 
@@ -149,9 +155,8 @@ body{
     /* background-color: yellow; */
 }
 
-.image-section .podcast-cover-image{
-    /* height: 100%; */
-}
+
+
 
 .audio{
     position: absolute;
