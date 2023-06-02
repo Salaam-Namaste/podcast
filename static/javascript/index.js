@@ -4,16 +4,19 @@ document.addEventListener('DOMContentLoaded', function() {
       let audio1 = document.getElementById("audio1");
       let audio2 = document.getElementById("audio2");
       let audio3 = document.getElementById("audio3");
+      let audio5 = document.getElementById("audio5")
 
       // information layers
       let info=document.getElementById("info1");
       let info2=document.getElementById("info2");
       let info3=document.getElementById("info3");
+      let info5=document.getElementById("info5");
 
       // infotext
       let infotext=document.getElementById('info-text')
       let infotext2=document.getElementById('info-text2')
       let infotext3=document.getElementById('info-text3')
+      let infotext5=document.getElementById('info-text5')
 
       // podcast section
       let podSection=document.getElementById('podcast-section')
@@ -81,6 +84,28 @@ document.addEventListener('DOMContentLoaded', function() {
         podSection.style.backgroundColor='rgb(233, 235, 241)'
         
         info3.classList.remove('show-info')
+
+      })
+
+      // for podcast 5
+      audio5.addEventListener('play',function(){
+        info5.style.bottom='0'
+        infotext5.style.opacity=0
+        infotext5.innerText='Now Playing..'
+        infotext5.style.animation='yaxis-animation .5s .8s backwards'
+        infotext5.style.opacity=1
+
+
+        setTimeout(() => {
+          podSection.style.backgroundColor='rgba(0, 0, 0, 0.1)'
+        }, 200);
+
+      })
+      audio5.addEventListener('pause',function(){
+        infotext5.style.animation=''
+        podSection.style.backgroundColor='rgb(233, 235, 241)'
+        info5.style.bottom='44rem'
+        
 
       })
 
