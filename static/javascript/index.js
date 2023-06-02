@@ -18,17 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
       // podcast section
       let podSection=document.getElementById('podcast-section')
 
-      // menu and navbar
-      let menu=document.getElementById('menu')
-      let navbar=document.getElementById('navbar')
-
-
-      // for opening and closing the navigation menu
-      menu.addEventListener('click',function(){
-        navbar.classList.toggle('open-navbar')
-      })
-
-
       // for podcast 1
       audio1.addEventListener('play',function(){
         info.classList.add('show-info')
@@ -94,8 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
         info3.classList.remove('show-info')
 
       })
-
-
 
   });
   
