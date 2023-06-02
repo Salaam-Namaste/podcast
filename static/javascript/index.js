@@ -6,6 +6,13 @@ document.addEventListener('DOMContentLoaded', function() {
       let grid=document.getElementById('grid-container')
       let podSection=document.getElementById('podcast-section')
       let mainSection=document.getElementById("main")
+      let menu=document.getElementById('menu')
+      let navbar=document.getElementById('navbar')
+
+
+      menu.addEventListener('click',function(){
+        navbar.classList.toggle('open-navbar')
+      })
 
       audio1.addEventListener('play',function(){
         info.classList.add('show-info')
