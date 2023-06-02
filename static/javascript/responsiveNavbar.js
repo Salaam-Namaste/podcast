@@ -15,4 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
         navbar.classList.remove('open-navbar')
         overlay.classList.remove("show-overlay")
       };
+
+    navbar.addEventListener('click',function(event){
+      if(event.contains(navbar)){
+        prompt("clicked inside")
+      }
+    })
+    
+
 });

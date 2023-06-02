@@ -39,8 +39,8 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 4rem;
+    z-index: 1000;
     position: relative;
-    z-index: 1400;
 }
 
 .header h1{
