@@ -129,6 +129,7 @@ body{
     overflow: hidden;
     position: relative;
     z-index: 4;
+    margin-bottom: 3rem;
 }
 
 .grid-item:nth-child(1){
@@ -141,14 +142,11 @@ body{
 .grid-item:nth-child(3){
     animation: yaxis-animation .5s .5s backwards
 }
-.grid-item:nth-child(4){
-    animation: yaxis-animation .5s .6s backwards
-}
 .grid-item:nth-child(3) img{
     transform: translateY(30%);
 }
-.grid-item:nth-child(4) blockquote{
-    width: 100%;
+.grid-item:nth-child(4){
+    animation: yaxis-animation .5s .6s backwards
 }
 .grid-item:nth-child(4) .image-section{
     height: 30rem;
@@ -156,6 +154,16 @@ body{
     scroll-behavior: smooth;
     overflow-x: hidden;
 
+}
+.grid-item:nth-child(4) blockquote{
+    width: 100%;
+}
+
+.grid-item:nth-child(5){
+    animation: yaxis-animation .5s .7s backwards
+}
+.grid-item:nth-child(5) .image-section{
+    height: max-content;
 }
 
 
@@ -243,7 +251,7 @@ body{
     /* background-color: blue; */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
     flex-direction: column;
     padding:1.5rem 0;
 }
@@ -258,9 +266,6 @@ body{
 .info-section p{
     margin-top: .5rem;
 }
-
-
-
 
 
 /* MEDIA QUERIES */
