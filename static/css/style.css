@@ -136,7 +136,6 @@ body{
 .grid-item:nth-child(1){
     animation: yaxis-animation .5s .3s backwards
 }
-
 .grid-item:nth-child(2){
     animation: yaxis-animation .5s .4s backwards
 }
@@ -150,16 +149,8 @@ body{
     animation: yaxis-animation .5s .6s backwards
 }
 .grid-item:nth-child(4) .image-section{
-    height: 30rem;
-    overflow: scroll;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-
+    height:max-content;
 }
-.grid-item:nth-child(4) blockquote{
-    width: 100%;
-}
-
 .grid-item:nth-child(5){
     animation: yaxis-animation .5s .7s backwards
 }
@@ -169,6 +160,13 @@ body{
 .grid-item:nth-child(5) #info5{
     bottom: 43rem;
 }
+.grid-item:nth-child(6){
+    animation: yaxis-animation .5s .8s backwards
+}
+.grid-item:nth-child(6) .image-section{
+    height: min-content;
+}
+
 
 
 
