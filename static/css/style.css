@@ -166,6 +166,13 @@ body{
 .grid-item:nth-child(6) .image-section{
     height: min-content;
 }
+.grid-item:nth-child(7) .image-section{
+    height: fit-content;
+    background-color: red;
+}
+.grid-item:nth-child(8) .image-section{
+    height: fit-content;
+}
 
 
 
