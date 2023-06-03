@@ -31,15 +31,16 @@ body{
     position: absolute;
     right: 3rem;
     display: none;
+    z-index: 3000;
 }
 .header{
-    background-color: rgba(141, 24, 199, 0.858);
+    background-color: rgb(141, 24, 199);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 4rem;
-    z-index: 1000;
+    z-index: 2500;
     position: relative;
 }
 
@@ -115,11 +116,12 @@ body{
     grid-template-rows: repeat(2,1fr);
     /* row-gap: 1.8rem; */
     /* column-gap: 3rem; */
-    width: 100%;
-    height: 100%;
+    width: 90%;
     align-items: center;
     justify-items: center;
     transition: .4s;
+    overflow-y: hidden;
+    /* padding-top: 6rem; */
 }
 
 .grid-item{
@@ -140,13 +142,16 @@ body{
     animation: yaxis-animation .5s .4s backwards
 }
 .grid-item:nth-child(3){
-    animation: yaxis-animation .5s .5s backwards
+    animation: yaxis-animation .5s .5s backwards;
 }
-.grid-item:nth-child(3) img{
-    transform: translateY(30%);
+.grid-item:nth-child(3) .image-section{
+    height: 30rem;
+}
+.grid-item:nth-child(3) .information-layer{
+    bottom: -60rem;
 }
 .grid-item:nth-child(4){
-    animation: yaxis-animation .5s .6s backwards
+    animation: yaxis-animation .5s .6s backwards;
 }
 .grid-item:nth-child(4) .image-section{
     height:max-content;
@@ -166,15 +171,26 @@ body{
 .grid-item:nth-child(6) .image-section{
     height: min-content;
 }
+.grid-item:nth-child(7){
+    animation: yaxis-animation .5s .9s backwards
+}
 .grid-item:nth-child(7) .image-section{
     height: fit-content;
-    background-color: red;
+}
+.grid-item:nth-child(8){
+    animation: yaxis-animation .5s 1s backwards
 }
 .grid-item:nth-child(8) .image-section{
     height: fit-content;
 }
+.grid-item:nth-child(9){
+    animation: yaxis-animation .5s 1.1s backwards
+}
 .grid-item:nth-child(9) .image-section{
     height: fit-content;
+}
+.grid-item:nth-child(10){
+    animation: yaxis-animation .5s 1.2s backwards
 }
 .grid-item:nth-child(10) .image-section{
     height: fit-content;
@@ -210,12 +226,12 @@ body{
 
 .audio{
     position: absolute;
-    z-index: 300;
     width: 100%;
     bottom: 0rem;
     height: 2rem; 
     background-color: white;
     transition: .4s;
+    z-index: 400;
 }
 
 .audio:hover{
@@ -234,6 +250,7 @@ body{
     box-shadow: 0 0 1rem 1px purple;
     transition: .7s ease;
     color: rgba(255, 255, 255, 0.666);
+    z-index: 200;
 }
 
 #info-text{
@@ -243,23 +260,6 @@ body{
 .show-info{
     bottom: 0rem;
 }
-
-#play-btn{
-    position: absolute;
-    height: 3.5rem;
-    bottom: .3rem;
-    right: .5rem;
-    cursor: pointer;
-    transition: .3s;
-    opacity: .9;
-}
-
-#play-btn:hover{
-    transform: translateY(-4%);
-    filter: saturate(10);
-    opacity: 1;
-}
-
 .info-section{
     width: 98%;
     height: 100%;

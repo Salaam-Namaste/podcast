@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // for podcast 3
       audio3.addEventListener('play',function(){
-        info3.classList.add('show-info')
+        info3.style.bottom=0
         infotext3.style.opacity=0
         infotext3.innerText='Now Playing..'
         infotext3.style.animation='yaxis-animation .5s .8s backwards'
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
         infotext3.style.animation=''
         podSection.style.backgroundColor='rgb(233, 235, 241)'
         
-        info3.classList.remove('show-info')
+        info3.style.bottom='-40rem'
 
       })
 
