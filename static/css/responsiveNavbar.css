@@ -1,0 +1,27 @@
+@media (max-width:1125px) {
+    .navbar{
+        display: block;
+        position: fixed;
+        top: 11.3rem;
+        right: -20rem;
+        background-color: rgb(236, 239, 246);
+        color: purple;
+        font-size: 1.1rem;
+        padding: 6rem;
+        height: 100vh;
+        transition: .4s;
+        z-index: 100;
+        border-radius: .1rem;
+    }
+    .nav-items{
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 6rem;
+    }
+    .open-navbar{
+        right: 0rem;
+    }
+    #menu{
+        display: block;
+    }
+}
