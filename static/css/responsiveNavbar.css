@@ -5,7 +5,6 @@
         top: 11.3rem;
         right: -20rem;
         background-color: rgb(236, 239, 246);
-        color: purple;
         font-size: 1.1rem;
         padding: 6rem;
         height: 100vh;
@@ -17,6 +16,10 @@
         margin-left: 0rem;
         margin-right: 0rem;
         margin-bottom: 6rem;
+        color: purple;
+    }
+    .nav-items:hover{
+        color: purple;
     }
     .open-navbar{
         right: 0rem;
