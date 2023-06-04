@@ -1,0 +1,12 @@
+@media (max-width:1290px){
+    .title h2{
+        font-size: 2rem;
+    }
+    .title h3{
+        font-size: 1.6rem;
+        word-break: keep-all;
+        text-align: center;
+    }
+}
+
+@media (max-width:1012px){}
