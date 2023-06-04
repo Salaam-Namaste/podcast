@@ -35,6 +35,10 @@
     list-style: none;
     overflow-x: hidden;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
 }
 .overlay{
     width: 100vw;
