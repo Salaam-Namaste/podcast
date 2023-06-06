@@ -243,7 +243,11 @@ body{
     border-radius: 10%;
     color: var(--main-color);
     margin: 1rem .7rem;
-    transition: .2s;
+    transition: .4s;
+}
+
+.social-links a:hover{
+    transform: translateY(-3%);
 }
 .social-links a:nth-child(1){
     animation: yaxis-animation .5s .5s backwards;
