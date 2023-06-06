@@ -65,6 +65,7 @@
 }
 a{
     text-decoration: none;
+    /* overflow: hidden; */
 }
 .overlay{
     width: 100vw;
@@ -126,7 +127,7 @@ body{
 }
 
 
-.nav-items:nth-child(1){
+/* .nav-items:nth-child(1){
     animation: yaxis-animation .5s .7s backwards;
 }
 .nav-items:nth-child(2){
@@ -137,7 +138,7 @@ body{
 }
 .nav-items:nth-child(4){
     animation: yaxis-animation .5s 1s backwards;
-}
+} */
 
 /* MAIN SECTION */
 .main{
