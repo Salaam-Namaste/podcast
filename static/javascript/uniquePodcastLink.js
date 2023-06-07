@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded',function(){
 
     const copyToClipboard=function(link){
+
+        link="https://salaam-namaste.github.io/podcast/podcastId"+link
         navigator.clipboard.writeText(link)
     }
       
@@ -20,7 +22,6 @@ document.addEventListener('DOMContentLoaded',function(){
     pod1LinkIcon.addEventListener("click",function(){
         link=pod1LinkIcon.getAttribute("link")
         copyToClipboard(link)
-        prompt("it works")
 
     })
 
