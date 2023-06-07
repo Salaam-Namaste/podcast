@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
     const copyToClipboard=function(link){
 
-        link="https://salaam-namaste.github.io/podcast/podcastId"+link
+        link="https://salaam-namaste.github.io/podcast/podcastId/"+link
         navigator.clipboard.writeText(link)
     }
       
@@ -22,72 +22,71 @@ document.addEventListener('DOMContentLoaded',function(){
     pod1LinkIcon.addEventListener("click",function(){
         link=pod1LinkIcon.getAttribute("link")
         copyToClipboard(link)
-
     })
 
     // pod 2 click copy
     pod2LinkIcon.addEventListener("click",function(){
-        link=pod1LinkIcon.getAttribute("link")
+        link=pod2LinkIcon.getAttribute("link")
         copyToClipboard(link)
-        prompt("it works")
+        
 
     })
     // pod 3 click copy
     pod3LinkIcon.addEventListener("click",function(){
-        link=pod1LinkIcon.getAttribute("link")
+        link=pod3LinkIcon.getAttribute("link")
         copyToClipboard(link)
-        prompt("it works")
+
 
     })
     // pod 4 click copy
     pod4LinkIcon.addEventListener("click",function(){
-        link=pod1LinkIcon.getAttribute("link")
+        link=pod4LinkIcon.getAttribute("link")
         copyToClipboard(link)
-        prompt("it works")
+        
 
     })
     // pod 5 click copy
     pod5LinkIcon.addEventListener("click",function(){
-        link=pod1LinkIcon.getAttribute("link")
+        link=pod5LinkIcon.getAttribute("link")
         copyToClipboard(link)
-        prompt("it works")
+        
 
     })
     // pod 6 click copy
     pod6LinkIcon.addEventListener("click",function(){
-        link=pod1LinkIcon.getAttribute("link")
+        link=pod6LinkIcon.getAttribute("link")
         copyToClipboard(link)
-        prompt("it works")
+        
 
     })
     // pod 7 click copy
     pod7LinkIcon.addEventListener("click",function(){
-        link=pod1LinkIcon.getAttribute("link")
+        link=pod7LinkIcon.getAttribute("link")
         copyToClipboard(link)
-        prompt("it works")
+        
 
     })
     // pod 8 click copy
     pod8LinkIcon.addEventListener("click",function(){
-        link=pod1LinkIcon.getAttribute("link")
+        link=pod8LinkIcon.getAttribute("link")
         copyToClipboard(link)
-        prompt("it works")
+        
 
     })
 
     // pod 9 click copy
     pod9LinkIcon.addEventListener("click",function(){
-        link=pod1LinkIcon.getAttribute("link")
+        link=pod9LinkIcon.getAttribute("link")
         copyToClipboard(link)
-        prompt("it works")
+        
 
     })
 
     // pod 10 click copy
     pod10LinkIcon.addEventListener("click",function(){
-        link=pod1LinkIcon.getAttribute("link")
+        link=pod10LinkIcon.getAttribute("link")
         copyToClipboard(link)
-        prompt("it works")
+        
 
     })
 
