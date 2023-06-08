@@ -439,12 +439,27 @@ body{
     flex-direction: column;
     padding:1.5rem 0;
 }
+
+@keyframes link-animation {
+    0%{
+        font-size: 3rem;
+        transform: rotate(0deg);
+    }
+
+    100%{
+        font-size: 1.3rem;
+        transform: rotate(100deg);
+    }
+    
+}
+
 .info-section i{
     position: absolute;
     bottom: .5rem;
     font-size: 1.3rem;
     right: .4rem;
     cursor: pointer;
+    transition: .4s;
 }
 
 .info-section p{

@@ -90,4 +90,24 @@ document.addEventListener('DOMContentLoaded',function(){
 
     })
 
+
+    // link copy confirmation
+    const linkIcons=document.getElementsByClassName("bx bx-link")
+
+    for(let i=0;i<linkIcons.length;i++){
+        linkIcons[i].addEventListener('click',function(){
+
+            linkIcons[i].innerText='✅'
+            
+            setTimeout(() => {
+                linkIcons[i].innerText='❤️'
+            }, 500);
+            
+            setTimeout(() => {
+                linkIcons[i].innerText=''
+            }, 2000);
+        })
+    }
+
+
 })
