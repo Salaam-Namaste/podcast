@@ -367,6 +367,15 @@ body{
 .grid-item:nth-child(10) .image-section{
     height: fit-content;
 }
+.grid-item:nth-child(13) .image-section{
+    height: fit-content;
+}
+.grid-item:nth-child(14) .image-section{
+    height: fit-content;
+}
+.grid-item:nth-child(15) .image-section{
+    height: fit-content;
+}
 
 .container{
     width: 100%;
