@@ -43,6 +43,10 @@
     
 }
 
+video{
+    height: 100%;
+}
+
 /* BASE STYLES */
 *{
     margin: 0;
