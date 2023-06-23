@@ -69,7 +69,6 @@ video{
 }
 a{
     text-decoration: none;
-    /* overflow: hidden; */
 }
 .overlay{
     width: 100vw;
@@ -85,7 +84,12 @@ a{
     visibility: visible;
 }
 body{
-    background-color: rgb(233, 235, 241);
+    /* background-color: rgb(233, 235, 241); */
+    background: url("https://images.pexels.com/photos/17183553/pexels-photo-17183553/free-photo-of-pharmacy-with-neon-at-winter-night.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 #menu{
     font-size: 3rem;
@@ -95,7 +99,7 @@ body{
     z-index: 3000;
 }
 .header{
-    background-color: rgb(141, 24, 199);
+    background-color: rgba(168 ,81 ,211 , .3);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -106,7 +110,6 @@ body{
     top: 0;
     width: 100%;
     height:11.3rem;
-    overflow-y: hidden;
     overflow: hidden;
 }
 .header h1{
@@ -131,19 +134,6 @@ body{
 }
 
 
-/* .nav-items:nth-child(1){
-    animation: yaxis-animation .5s .7s backwards;
-}
-.nav-items:nth-child(2){
-    animation: yaxis-animation .5s .8s backwards;
-}
-.nav-items:nth-child(3){
-    animation: yaxis-animation .5s .9s backwards;
-}
-.nav-items:nth-child(4){
-    animation: yaxis-animation .5s 1s backwards;
-} */
-
 /* MAIN SECTION */
 .main{
     display: flex;
@@ -155,12 +145,12 @@ body{
 
 /* HOME SECTION */
 .home-section{
-    background-color: rgb(233, 235, 241);
+    background-color: rgba(233, 235, 241, 0);
     width: 98vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 1rem 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 3rem 1rem 100rem 1px purple;
     margin-top: 1.5rem;
     border-radius: .6rem;
     height: 42rem;
@@ -177,13 +167,10 @@ body{
     border-bottom: .8rem;
     width: 100%;
     border-radius: .6rem;
-
 }
 
 .logo-container{
     border-radius: .8rem;
-    box-shadow: 0 0 1rem 1px rgba(128, 0, 128, 0.427);
-    overflow: hidden;
     height: auto;
     display: flex;
     justify-content: center;
@@ -200,11 +187,12 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(220, 247, 85, 0.815);
+    /* background-color: rgba(220, 247, 85, 0.3); */
     box-shadow: 0 0 1rem 1px rgba(0, 0, 0, 0.158);
     border-radius: .6rem;
     height: 100%;
     width: 100%;
+    color: white;
 
 }
 .title{
@@ -215,25 +203,22 @@ body{
     overflow: hidden;
 }
 .title h2{
-    font-size: 2rem;
+    font-size: 2.8rem;
     font-weight:100;
     animation: yaxis-animation .5s .5s backwards;
 }
-
 .title h3{
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     animation: yaxis-animation .5s .6s backwards;
 }
 .title span{
-    color: purple;
+    color: rgb(255, 0, 255);
     font-weight: 900;
-
 }
 .social-links{
     margin-top: .1rem;
     overflow: hidden;
 }
-
 .social-links a{
     font-size: 2rem;
     display: inline-flex;
@@ -248,10 +233,12 @@ body{
     color: var(--main-color);
     margin: 1rem .7rem;
     transition: .4s;
+    box-shadow: 0 0 1rem 1px rgb(128, 0, 128);
 }
-
 .social-links a:hover{
     transform: translateY(-3%);
+    background-color: rgb(128, 0, 128);
+    color: white;
 }
 .social-links a:nth-child(1){
     animation: yaxis-animation .5s .5s backwards;
@@ -266,15 +253,9 @@ body{
     font-size: 2.5rem;
 }
 
-.social-links a:hover{
-    background-color: rgb(128, 0, 128);
-    color: white;
-    box-shadow: 0 0 1rem 1px rgb(128, 0, 128);
-}
-
 /* PODCAST SECTION */
 .podcast-section{
-    background-color: rgb(233, 235, 241);
+    /* background-color: rgb(233, 235, 241); */
     width: 98vw;
     margin-top: 1.5rem;
     border-radius: .6rem;
@@ -283,21 +264,23 @@ body{
     justify-content: center;
     align-items: center;
     transition: .4s;
+    /* background: url('https://images.pexels.com/photos/11901222/pexels-photo-11901222.jpeg?auto=compress&cs=tinysrgb&w=1600'); */
+    background: url("https://salaamnamastehome.files.wordpress.com/2019/06/salaam-school-radio-program-with-school-students1.jpg?strip=info&w=2000");
+    background-blend-mode:darken;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .podcast-container-grid{
     display: grid;
-    /* padding-top: 1.8rem; */
     grid-template-columns:repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
-    /* row-gap: 1.8rem; */
-    /* column-gap: 3rem; */
     width: 90%;
     align-items: center;
     justify-items: center;
     transition: .4s;
     overflow-y: hidden;
-    /* padding-top: 6rem; */
 }
 
 .grid-item{
@@ -399,13 +382,7 @@ body{
     height: 16rem;
     position: relative;
     overflow: hidden;
-    /* margin-top: 0.5rem; */
-    /* background-color: yellow; */
 }
-
-
-
-
 .audio{
     position: absolute;
     width: 100%;
@@ -484,7 +461,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: rgb(178, 157, 233);
+    color: white;
     padding: 4rem;
     margin-top: 2rem;
     border-radius: .2rem;

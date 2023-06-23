@@ -17,6 +17,11 @@ document.addEventListener('DOMContentLoaded',function(){
     const pod9LinkIcon=document.getElementById("podcast9-linkIcon")    
     const pod10LinkIcon=document.getElementById("podcast10-linkIcon")    
     const pod11LinkIcon=document.getElementById("podcast11-linkIcon")    
+    const pod12LinkIcon=document.getElementById("podcast12-linkIcon")    
+    const pod13LinkIcon=document.getElementById("podcast13-linkIcon")    
+    const pod14LinkIcon=document.getElementById("podcast14-linkIcon")    
+    const pod15LinkIcon=document.getElementById("podcast15-linkIcon")    
+    const pod16LinkIcon=document.getElementById("podcast16-linkIcon")    
 
 
     // pod 1 click copy
@@ -94,6 +99,31 @@ document.addEventListener('DOMContentLoaded',function(){
     // pod 11 click copy
     pod11LinkIcon.addEventListener("click",function(){
         link=pod11LinkIcon.getAttribute("link")
+        copyToClipboard(link)
+    })
+    // pod 12 click copy
+    pod12LinkIcon.addEventListener("click",function(){
+        link=pod12LinkIcon.getAttribute("link")
+        copyToClipboard(link)
+    })
+    // pod 13 click copy
+    pod13LinkIcon.addEventListener("click",function(){
+        link=pod13LinkIcon.getAttribute("link")
+        copyToClipboard(link)
+    })
+    // pod 14 click copy
+    pod14LinkIcon.addEventListener("click",function(){
+        link=pod14LinkIcon.getAttribute("link")
+        copyToClipboard(link)
+    })
+    // pod 15 click copy
+    pod15LinkIcon.addEventListener("click",function(){
+        link=pod15LinkIcon.getAttribute("link")
+        copyToClipboard(link)
+    })
+    // pod 16 click copy
+    pod16LinkIcon.addEventListener("click",function(){
+        link=pod16LinkIcon.getAttribute("link")
         copyToClipboard(link)
     })
 
