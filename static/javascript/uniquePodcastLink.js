@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded',function(){
     const pod8LinkIcon=document.getElementById("podcast8-linkIcon")    
     const pod9LinkIcon=document.getElementById("podcast9-linkIcon")    
     const pod10LinkIcon=document.getElementById("podcast10-linkIcon")    
+    const pod11LinkIcon=document.getElementById("podcast11-linkIcon")    
 
 
     // pod 1 click copy
@@ -88,6 +89,12 @@ document.addEventListener('DOMContentLoaded',function(){
         copyToClipboard(link)
         
 
+    })
+
+    // pod 11 click copy
+    pod11LinkIcon.addEventListener("click",function(){
+        link=pod11LinkIcon.getAttribute("link")
+        copyToClipboard(link)
     })
 
 
