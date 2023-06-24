@@ -31,13 +31,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         setTimeout(() => {
-          podSection.style.backgroundColor='rgba(0, 0, 0, 0.1)'
+          // podSection.style.backgroundColor='rgba(0, 0, 0, 0.8)'
         }, 200);
 
       })
       audio1.addEventListener('pause',function(){
         infotext.style.animation=''
-        podSection.style.backgroundColor='rgb(233, 235, 241)'
+        // podSection.style.backgroundColor='rgb(0,0,0,.7)'
         
         info.classList.remove('show-info')
 
@@ -53,13 +53,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         setTimeout(() => {
-          podSection.style.backgroundColor='rgba(0, 0, 0, 0.1)'
+          // podSection.style.backgroundColor='rgba(0, 0, 0, 0.1)'
         }, 200);
 
       })
       audio2.addEventListener('pause',function(){
         infotext2.style.animation=''
-        podSection.style.backgroundColor='rgb(233, 235, 241)'
+        // podSection.style.backgroundColor='rgb(233, 235, 241)'
         
         info2.classList.remove('show-info')
 
@@ -75,13 +75,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         setTimeout(() => {
-          podSection.style.backgroundColor='rgba(0, 0, 0, 0.1)'
+          // podSection.style.backgroundColor='rgba(0, 0, 0, 0.1)'
         }, 200);
 
       })
       audio3.addEventListener('pause',function(){
         infotext3.style.animation=''
-        podSection.style.backgroundColor='rgb(233, 235, 241)'
+        // podSection.style.backgroundColor='rgb(233, 235, 241)'
         
         info3.style.bottom='-40rem'
 
@@ -97,13 +97,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         setTimeout(() => {
-          podSection.style.backgroundColor='rgba(0, 0, 0, 0.1)'
+          // podSection.style.backgroundColor='rgba(0, 0, 0, 0.1)'
         }, 200);
 
       })
       audio5.addEventListener('pause',function(){
         infotext5.style.animation=''
-        podSection.style.backgroundColor='rgb(233, 235, 241)'
+        // podSection.style.backgroundColor='rgb(233, 235, 241)'
         info5.style.bottom='44rem'
         
 
